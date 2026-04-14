@@ -8,7 +8,7 @@ A PySpark data-ingestion demo that generates ~10 K mock records covering nearly 
 
 ```
 .
-├── ,env                          # Local env vars (DO NOT commit — contains secrets)
+├── .env                          # Local env vars (DO NOT commit — contains secrets)
 ├── Dockerfile
 ├── justfile                      # Task runner (requires `just`)
 ├── pyproject.toml
@@ -46,7 +46,7 @@ python src/spark_ingest_demo.py
 
 ### Environment Variables
 
-Copy `,env` and fill in your values (never commit real credentials):
+Copy `.env.example` and rename to `.env`, then fill in your values (never commit real credentials):
 
 ```
 S3_BUCKET=<your-s3-bucket>
